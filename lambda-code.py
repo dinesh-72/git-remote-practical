@@ -18,10 +18,10 @@ def lambda_handler(event, context):
                 network_interface_id = addresses['Addresses'][0]['NetworkInterfaceId']
                 print("NetworkInterfaceId",network_interface_id)
         else:
-            print("No EIP Found")
+            print("No EIP Found,region")
 
     # TODO implement
     return {
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!')
-    }
+    }   
